@@ -1,0 +1,18 @@
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;width:100%;min-height:100%;font-family:Arial,Helvetica,sans-serif}
+html{background:#06142f url('img.jpg') center/cover fixed no-repeat;color:#fff;overflow:hidden}
+body{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px;background:linear-gradient(135deg,rgba(2,10,28,.82),rgba(0,73,150,.30))}
+.host{width:92%;max-width:1000px;min-height:570px;padding:34px 42px 28px;border:1px solid rgba(89,190,255,.38);border-radius:24px;background:rgba(4,17,43,.88);box-shadow:0 20px 60px rgba(0,0,0,.48),inset 0 0 45px rgba(0,132,255,.08);text-align:center}
+.brand{margin:0;font-size:42px;letter-spacing:2px;color:#f5fbff;text-shadow:0 0 18px rgba(45,174,255,.65)}
+.subtitle{margin:8px 0 0;color:#7fd7ff;font-size:18px;letter-spacing:1px}
+.line{width:80%;height:2px;margin:24px auto 22px;background:linear-gradient(90deg,transparent,#23a9ff,transparent);box-shadow:0 0 12px rgba(35,169,255,.55)}
+.fw-box{display:inline-block;padding:10px 20px;margin-bottom:18px;border:1px solid rgba(80,193,255,.42);border-radius:999px;background:rgba(0,100,190,.16);color:#bceaff;font-size:16px}
+#msgs{min-height:116px;margin:20px auto;padding:27px 18px;display:flex;align-items:center;justify-content:center;border-radius:18px;background:linear-gradient(180deg,rgba(11,48,91,.72),rgba(3,26,57,.78));border:1px solid rgba(67,180,255,.25);box-shadow:inset 0 0 24px rgba(0,132,255,.08);color:#fff;font-size:28px;line-height:1.35;text-shadow:0 2px 8px #000}
+.support-title{margin:22px 0 12px;color:#d9f4ff;font-size:17px;letter-spacing:.7px}
+.support{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:850px;margin:0 auto}
+.support span{padding:8px 12px;border-radius:9px;border:1px solid rgba(64,178,255,.28);background:rgba(0,87,165,.22);color:#a9e2ff;font-size:14px}
+.footer{margin-top:22px;color:#7094b4;font-size:12px}
+a{text-decoration:none}
+#progress,#menu,#crypto,#tools,#lnx,#mods{display:none}
+@media(max-width:700px){body{padding:12px}.host{width:98%;padding:24px 16px}.brand{font-size:30px}.subtitle{font-size:14px}#msgs{font-size:21px}}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html manifest="css.manifest">
+<head>
+<meta charset="utf-8">
+<title>Ohab Wibkit Host - Offline Cache</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
+function DisplayCacheProgress(){window.msgs.innerHTML="Cache Installed Successfully ✔";setTimeout(function(){window.msgs.innerHTML="Now Close And Re-Open Your Browser ...";},1500);}
+window.applicationCache.addEventListener("progress",DLProgress,false);
+window.applicationCache.oncached=function(e){DisplayCacheProgress();};
+window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+window.applicationCache.onerror=function(e){window.msgs.innerHTML="Error Installing Cache! - Clear and Re-Open Your Browser ...";};
+</script>
+<main class="host">
+    <h1 class="brand">OHAB WIBKIT HOST</h1>
+    <div class="subtitle">PS4 • OFFLINE CACHE INSTALLER</div>
+    <div class="line"></div>
+    <div class="fw-box">GoldHEN Offline Cache</div>
+    <h2 id="msgs">Starting Cache Installation...</h2>
+    <div class="support-title">SUPPORTED SYSTEM UPDATES</div>
+    <div class="support">
+        <span>5.05 / 5.07</span><span>7.00 – 8.52</span><span>9.00 – 9.60</span>
+        <span>10.00 – 11.02</span><span>11.50 – 12.02</span><span>12.50 – 13.00</span><span>13.02 – 13.52</span>
+    </div>
+    <div class="footer">Original cache manifests preserved • Ohab Wibkit Host</div>
+</main>
+</body>
+</html>
