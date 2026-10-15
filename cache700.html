@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html manifest="700.manifest">
+<head>
+<title>Ohab Tech HOST | PS4</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="تثبيت الكاش دون إنترنت: " + Percent + "%";}
+function DisplayCacheProgress(){window.msgs.innerHTML="تم تثبيت الكاش بنجاح ✔";setTimeout(function(){window.msgs.innerHTML="أغلق المتصفح ثم افتحه مجددًا.";},1500);}
+window.applicationCache.addEventListener("progress",DLProgress,false);
+window.applicationCache.oncached=function(e){DisplayCacheProgress();};
+window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+window.applicationCache.onerror=function(e){window.msgs.innerHTML="حدث خطأ في تثبيت الكاش. امسح بيانات المتصفح وحاول مجددًا.";};
+</script>
+<h1>Ohab Tech HOST | هوست PS4</h1>
+<hr>
+<br>
+<h1 id=msgs style="font-size: 30px;margin-top: 77px;margin-bottom: 455px;">جارٍ تثبيت الكاش للاستخدام دون إنترنت...</h1>
+<h1 style="margin-top: 43px;">التوافق: 5.05–5.07 • 7.00–8.52 • 9.00–9.60 • 10.00–11.02 • 11.50–12.02 • 12.50–13.00 • 13.02–13.52</h1>
+</body>
+</html>
